@@ -221,52 +221,42 @@ ul {
 
 .features {
     background: var(--black);
-}
-
-.feature {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: center;
     max-width: 1280px;
     margin: 0 auto;
     padding: 4rem 2rem;
-    border-bottom: 8px solid var(--gray);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
 }
 
-.feature-reverse {
-    direction: rtl;
-}
-
-.feature-reverse > * {
-    direction: ltr;
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 16px;
+    text-align: left;
 }
 
 .feature-text {
-    padding: 0 2rem;
+    padding: 0;
 }
 
 .feature h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    margin-bottom: 1.25rem;
-    line-height: 1.1;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
 }
 
 .feature p {
-    font-size: 1.5rem;
-    line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .feature-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.feature img {
-    width: 100%;
-    max-width: 500px;
+    display: none;
 }
 
 .faq {
@@ -276,10 +266,10 @@ ul {
 }
 
 .faq h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-    margin-bottom: 2.5rem;
+    font-size: 1.125rem;
+    font-weight: 750;
+    text-align: left;
+    margin-bottom: 1rem;
 }
 
 .faq-list {
@@ -326,9 +316,10 @@ ul {
 }
 
 .faq-answer {
-    padding: 0 1.5rem 1.75rem;
+    padding: 1.5rem 1.5rem 1.75rem;
     font-size: 1.5rem;
     line-height: 1.6;
+    border-top: 2px solid var(--black);
 }
 
 .faq-answer p {
@@ -399,6 +390,12 @@ ul {
     font-size: 0.875rem;
 }
 
+@media (max-width: 1024px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -424,22 +421,18 @@ ul {
     .banner {
         background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_small.jpg');
     }
-    .feature {
+    .features {
         grid-template-columns: 1fr;
-        padding: 3rem 1rem;
-        text-align: center;
+        padding: 2rem 1rem;
     }
-    .feature-reverse {
-        direction: ltr;
-    }
-    .feature-text {
-        padding: 0;
+    .feature {
+        padding: 2rem 1.5rem;
     }
     .feature h2 {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
     .feature p {
-        font-size: 1.125rem;
+        font-size: 0.9375rem;
     }
     .faq h2 {
         font-size: 2rem;
@@ -487,12 +480,6 @@ ul {
     .btn-start {
         font-size: 1rem;
         padding: 0.75rem 1rem;
-    }
-    .feature h2 {
-        font-size: 1.75rem;
-    }
-    .feature p {
-        font-size: 1rem;
     }
     .faq h2 {
         font-size: 1.75rem;
