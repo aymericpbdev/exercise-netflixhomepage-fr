@@ -92,8 +92,9 @@ ul {
     padding: 0.4rem 2rem 0.4rem 0.8rem;
     border-radius: var(--radius);
     font-size: 0.875rem;
-    background-image: linear-gradient(45deg, transparent 50%, var(--white) 50%),
-                      linear-gradient(135deg, var(--white) 50%, transparent 50%);
+    background-image: 
+        linear-gradient(45deg, transparent 50%, var(--white) 50%),
+        linear-gradient(135deg, var(--white) 50%, transparent 50%);
     background-position: calc(100% - 15px) center, calc(100% - 10px) center;
     background-size: 5px 5px, 5px 5px;
     background-repeat: no-repeat;
@@ -119,15 +120,13 @@ ul {
     background: #c11119;
 }
 
-/* banner principal */
 .banner {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-                url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_medium.jpg') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_medium.jpg') center/cover no-repeat;
     background-color: #141414;
     padding: 6rem 2rem 4rem;
 }
@@ -423,8 +422,7 @@ ul {
         justify-content: center;
     }
     .banner {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-                          url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_small.jpg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_small.jpg');
     }
     .feature {
         grid-template-columns: 1fr;
@@ -480,8 +478,7 @@ ul {
         font-size: 0.9375rem;
     }
     .banner {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
-                          url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_small.jpg');
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://assets.nflxext.com/ffe/siteui/vlv3/024bfb98-9e9d-441d-9c5f-d2c798d8e42f/web/FR-fr-20251013-TRIFECTA-perspective_aba575eb-81fc-457e-8bba-b688927bd3c1_small.jpg');
     }
     .email-input {
         font-size: 0.875rem;
